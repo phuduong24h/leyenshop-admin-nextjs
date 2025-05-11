@@ -1,0 +1,1 @@
+export const MAX_PRODUCT_IN_CATEGORY_HOT = 5;

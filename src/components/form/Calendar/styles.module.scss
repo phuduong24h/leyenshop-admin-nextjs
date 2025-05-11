@@ -1,0 +1,82 @@
+.calendarContainer {
+  width: 100%;
+  max-width: 330px;
+  height: auto;
+  overflow: hidden;
+  margin: 0 auto;
+
+  .ant-picker-body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 8px;
+  }
+
+  .calendarHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    font-weight: bold;
+    background-color: white;
+
+    .monthTitle {
+      font-size: 16px;
+      width: 150px;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .navButton {
+      font-size: 18px;
+      cursor: pointer;
+      color: gray;
+
+      &:hover {
+        color: black;
+      }
+    }
+  }
+
+  :global {
+    .ant-picker-cell-selected {
+      color: white !important;
+
+      .ant-picker-cell-inner,
+      .ant-picker-calendar-date-value,
+      .ant-picker-calendar-date-content {
+        background-color: var(--primary) !important;
+        border-radius: 40px;
+      }
+    }
+
+    .ant-picker-cell {
+      &:hover {
+        background-color: #ededed !important;
+        border-radius: 40px;
+      }
+    }
+
+    .ant-picker-panel {
+      width: 100%;
+      height: 100%;
+    }
+
+    .ant-picker-cell-today .ant-picker-cell-inner::before {
+      content: none !important;
+      border: none !important;
+      box-shadow: none !important;
+    }
+
+    .ant-picker-cell-today .ant-picker-calendar-date {
+      background-color: transparent !important;
+      border: none !important;
+    }
+
+    .ant-picker-cell-today {
+      border: none !important;
+      box-shadow: none !important;
+    }
+  }
+}

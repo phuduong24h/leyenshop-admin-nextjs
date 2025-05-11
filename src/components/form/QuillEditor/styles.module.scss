@@ -1,0 +1,27 @@
+.container {
+  :global {
+    .ql-toolbar {
+      background: var(--primary);
+      .ql-picker-options {
+        background: var(--primary);
+      }
+      .ql-stroke {
+        stroke: white;
+      }
+      .ql-fill {
+        stroke: white;
+        fill: transparent;
+      }
+      .ql-picker {
+        color: white;
+      }
+    }
+    .ql-container {
+      border: 1px solid var(--border-primary);
+      background-color: var(--background-primary) !important;
+    }
+    .ql-editor {
+      min-height: 250px;
+    }
+  }
+}

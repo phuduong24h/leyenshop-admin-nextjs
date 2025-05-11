@@ -1,0 +1,49 @@
+.menu {
+  display: flex;
+  flex: 1;
+  margin-top: 12px;
+
+  :global {
+    .ant-menu-item-icon {
+      color: white !important;
+    }
+    .ant-menu-item {
+      padding-inline: 12px !important;
+    }
+    .ant-menu-root .ant-menu-submenu-title {
+      padding-inline: 12px !important;
+    }
+    .ant-menu-inline .ant-menu-sub.ant-menu-inline {
+      padding-left: 24px !important;
+      padding-right: 0px !important;
+    }
+    .ant-menu-light .ant-menu-submenu-title {
+      color: white !important;
+    }
+    .ant-menu-light .ant-menu-item {
+      color: white;
+    }
+    .ant-menu-light .ant-menu-submenu-selected > .ant-menu-submenu-title {
+      color: white !important; // active
+    }
+    .ant-menu-light .ant-menu-item-selected {
+      color: white !important; // active
+      background-color: var(--admin-background-1);
+    }
+    .ant-menu-item:not(.ant-menu-item-selected):hover {
+      background-color: rgba(217, 217, 217, 0.2) !important;
+    }
+    .ant-menu-submenu-title:hover {
+      background-color: rgba(217, 217, 217, 0.2) !important;
+    }
+    .ant-menu-light .ant-menu-item:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected):hover {
+      color: white;
+    }
+    .ant-menu .ant-menu-submenu-arrow::before {
+      background-color: white !important;
+    }
+    .ant-menu .ant-menu-submenu-arrow::after {
+      background-color: white !important;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.customCheckbox {
+  :global {
+    .ant-checkbox-checked .ant-checkbox-inner {
+      background-color: var(--primary) !important;
+      border-color: var(--border-primary) !important;
+    }
+
+    .ant-checkbox-inner {
+      width: 20px !important;
+      height: 20px !important;
+
+      &:after {
+        width: 8px;
+        height: 14px;
+        border-width: 3px;
+      }
+    }
+  }
+}
